@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salem 的 GitHub 起步页</title>
+<style>
+  :root { --ink:#0f172a; --muted:#64748b; --line:#e2e8f0; --accent:#2563eb; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center;
+    background: radial-gradient(1200px 600px at 50% -10%, #eff6ff, #f8fafc 60%);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  .card {
+    width: min(680px, 92vw); background: #fff; border: 1px solid var(--line);
+    border-radius: 18px; padding: 36px 32px; margin: 40px 0;
+    box-shadow: 0 20px 50px -20px rgba(15, 23, 42, .18);
+  }
+  .badge {
+    display: inline-block; font-size: 12px; letter-spacing: .08em;
+    color: var(--accent); background: #eff6ff; border: 1px solid #dbeafe;
+    padding: 4px 10px; border-radius: 999px; text-transform: uppercase;
+  }
+  h1 { font-size: 30px; line-height: 1.25; margin: 16px 0 8px; letter-spacing: -.02em; }
+  .sub { color: var(--muted); font-size: 15px; margin: 0 0 26px; }
+  .grid { display: grid; gap: 12px; grid-template-columns: 1fr 1fr; }
+  .item { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .item.done { background: #f0fdf4; border-color: #bbf7d0; }
+  .item h3 { margin: 0 0 4px; font-size: 15px; }
+  .item p { margin: 0; font-size: 13px; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+  a.btn {
+    text-decoration: none; font-size: 14px; padding: 10px 16px; border-radius: 10px;
+    border: 1px solid var(--line); color: var(--ink); background: #fff;
+  }
+  a.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  footer { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--line);
+    font-size: 12px; color: var(--muted); }
+  @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+  <main class="card">
+    <span class="badge">GitHub Pages</span>
+    <h1>你好，这是 Salem 的第一个网页</h1>
+    <p class="sub">这个页面托管在你的 GitHub 仓库 <code>github-starter</code> 里，
+      改一次 <code>index.html</code> 并提交，这里就会跟着更新。</p>
+
+    <div class="grid">
+      <div class="item done"><h3>账号已就绪</h3><p>salem038029 已有 12 个星标项目</p></div>
+      <div class="item done"><h3>仓库已建好</h3><p>github-starter（公开）</p></div>
+      <div class="item"><h3>下一步：改 README</h3><p>点铅笔图标，改一句，Commit</p></div>
+      <div class="item"><h3>下一步：上传文件</h3><p>Add file → Upload files</p></div>
+    </div>
+
+    <div class="links">
+      <a class="btn primary" href="https://github.com/salem038029/github-starter">打开仓库</a>
+      <a class="btn" href="https://github.com/salem038029">我的主页</a>
+      <a class="btn" href="https://github.com/salem038029?tab=stars">我的星标</a>
+    </div>
+
+    <footer>Powered by GitHub Pages · 由 DeepSeek Harness 代建</footer>
+  </main>
+</body>
+</html>
